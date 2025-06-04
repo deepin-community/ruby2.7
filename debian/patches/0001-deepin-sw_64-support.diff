@@ -1,0 +1,14 @@
+diff --git a/ext/openssl/ossl_pkey_rsa.c b/ext/openssl/ossl_pkey_rsa.c
+index 4800fb2..f35f725 100644
+--- a/ext/openssl/ossl_pkey_rsa.c
++++ b/ext/openssl/ossl_pkey_rsa.c
+@@ -939,7 +939,9 @@ Init_ossl_rsa(void)
+     rb_define_method(cRSA, "params", ossl_rsa_get_params, 0);
+ 
+     DefRSAConst(PKCS1_PADDING);
++#ifdef RSA_SSLV23_PADDING
+     DefRSAConst(SSLV23_PADDING);
++#endif
+     DefRSAConst(NO_PADDING);
+     DefRSAConst(PKCS1_OAEP_PADDING);
+ 

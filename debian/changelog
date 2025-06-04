@@ -1,3 +1,9 @@
+ruby2.7 (2.7.5-1deepin1) unstable; urgency=medium
+
+  * feat: add sw64 support.
+
+ -- hudeng <hudeng@deepin.org>  Wed, 04 Jun 2025 16:33:07 +0800
+
 ruby2.7 (2.7.5-1) UNRELEASED; urgency=medium
 
   * update
